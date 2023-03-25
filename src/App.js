@@ -7,6 +7,7 @@ import { Avatar } from "antd";
 
 import AboutMe from "./components/aboutMe";
 import Portfolio from "./components/portfolio";
+import Test from "./components/test";
 
 function App() {
   return (
@@ -30,7 +31,8 @@ function App() {
       </header>
       <div className="myCard">
         {/* <AboutMe /> */}
-        <Portfolio/>
+        <Portfolio />
+        {/* <Test /> */}
       </div>
     </div>
   );
