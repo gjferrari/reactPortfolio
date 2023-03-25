@@ -33,7 +33,7 @@ const Portfolio = () => {
           >
             <Meta
               avatar={
-                <Avatar src="https://res.cloudinary.com/da6r9i8q5/image/upload/v1679704914/Genevieve_Ferrari_Headshot_xulyob.jpg" />
+                <Avatar src="https://res.cloudinary.com/da6r9i8q5/image/upload/v1679770193/Genevieve_Ferrari_Headshot_gvyku1.jpg" />
               }
               title="About Me"
               description="This is the description"

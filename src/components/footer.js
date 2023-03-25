@@ -1,16 +1,53 @@
 import React from "react";
+import { Button } from "antd";
+import { GithubFilled, LinkedinFilled, MailFilled } from "@ant-design/icons";
 
 function Footer() {
   return (
-    
-    <div className="aboutMe container mx-auto">
-      <h2 className="title font-bold underline">Why isn't this showing up?</h2>
-    </div>
+    <footer
+      style={{
+        display: "flex",
+        // flexDirection: "flex-end",
+        justifyContent: "flex-end",
+      }}
+    >
+      
+      <Button
+        type="text"
+        icon={
+          <LinkedinFilled
+            style={{ color: "#800797", fontSize: "20px" }}
+            key="link"
+          />
+        }
+        href="https://www.linkedin.com/in/genevieve-ferrari-17001178/"
+      ></Button>
+      ,
+      <Button
+        type="text"
+        icon={
+          <GithubFilled
+            style={{ color: "#800797", fontSize: "20px" }}
+            key="link"
+          />
+        }
+        href="https://github.com/gjferrari"
+      ></Button>
+      ,
+      <Button
+        type="text"
+        icon={
+          <MailFilled
+            style={{ color: "#800797", fontSize: "20px" }}
+            key="link"
+          />
+        }
+        href="https://github.com/gjferrari"
+      ></Button>
+    </footer>
   );
 }
 
 export default Footer;
 
-// just getting basic code in the structure 
-
-
+// just getting basic code in the structure

@@ -8,6 +8,7 @@ import { Avatar } from "antd";
 import AboutMe from "./components/aboutMe";
 import Portfolio from "./components/portfolio";
 import Test from "./components/test";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
           size={{ xs: 24, sm: 32, md: 40, lg: 64, xl: 80, xxl: 100 }}
           icon={<AntDesignOutlined />}
           src={
-            "https://res.cloudinary.com/da6r9i8q5/image/upload/v1679704914/Genevieve_Ferrari_Headshot_xulyob.jpg"
+            "https://res.cloudinary.com/da6r9i8q5/image/upload/v1679770193/Genevieve_Ferrari_Headshot_gvyku1.jpg"
           }
         />
         <p>Genevieve Ferrari</p>
@@ -30,10 +31,11 @@ function App() {
         ></a>
       </header>
       <div className="myCard">
-        {/* <AboutMe /> */}
-        <Portfolio />
+        <AboutMe />
+        {/* <Portfolio /> */}
         {/* <Test /> */}
       </div>
+      <Footer />
     </div>
   );
 }
