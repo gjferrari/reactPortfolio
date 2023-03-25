@@ -11,17 +11,14 @@
 // export default aboutMe;
 
 import React from "react";
-import {
-  EditOutlined,
-  EllipsisOutlined,
-  SettingOutlined,
-} from "@ant-design/icons";
-import { Avatar, Card } from "antd";
+import { GithubFilled, LinkedinFilled } from "@ant-design/icons";
+import { Avatar, Card, Button } from "antd";
 
 const { Meta } = Card;
 
 const AboutMe = () => (
   <Card
+    hoverable={true}
     style={{ width: 300 }}
     cover={
       <img
@@ -29,18 +26,35 @@ const AboutMe = () => (
         src="https://res.cloudinary.com/da6r9i8q5/image/upload/v1679707119/StandupShot_r7lkic.jpg"
       />
     }
-    // actions={[
-    //   <SettingOutlined key="setting" />,
-    //   <EditOutlined key="edit" />,
-    //   <EllipsisOutlined key="ellipsis" />,
-    // ]}
+    actions={[
+      <Button
+        type="text"
+        icon={
+          <LinkedinFilled
+            style={{ color: "#800797", fontSize: "20px" }}
+            key="link"
+          />
+        }
+        href="https://www.linkedin.com/in/genevieve-ferrari-17001178/"
+      ></Button>,
+      <Button
+        type="text"
+        icon={
+          <GithubFilled
+            style={{ color: "#800797", fontSize: "20px" }}
+            key="link"
+          />
+        }
+        href="https://github.com/gjferrari"
+      ></Button>,
+    ]}
   >
     <Meta
       avatar={
         <Avatar src="https://res.cloudinary.com/da6r9i8q5/image/upload/v1679704914/Genevieve_Ferrari_Headshot_xulyob.jpg" />
       }
       title="About Me"
-      description="This is the description"
+      description="I'm a full stack web developmer based out of Tacoma, WA"
     />
   </Card>
 );
