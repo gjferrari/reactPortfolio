@@ -26,20 +26,20 @@ const AboutMe = () => (
     cover={
       <img
         alt="example"
-        src="https://res.cloudinary.com/da6r9i8q5/image/upload/v1679704914/Genevieve_Ferrari_Headshot_xulyob.jpg"
+        src="https://res.cloudinary.com/da6r9i8q5/image/upload/v1679707119/StandupShot_r7lkic.jpg"
       />
     }
-    actions={[
-      <SettingOutlined key="setting" />,
-      <EditOutlined key="edit" />,
-      <EllipsisOutlined key="ellipsis" />,
-    ]}
+    // actions={[
+    //   <SettingOutlined key="setting" />,
+    //   <EditOutlined key="edit" />,
+    //   <EllipsisOutlined key="ellipsis" />,
+    // ]}
   >
     <Meta
       avatar={
         <Avatar src="https://res.cloudinary.com/da6r9i8q5/image/upload/v1679704914/Genevieve_Ferrari_Headshot_xulyob.jpg" />
       }
-      title="Card title"
+      title="About Me"
       description="This is the description"
     />
   </Card>
