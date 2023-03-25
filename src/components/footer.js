@@ -11,7 +11,6 @@ function Footer() {
         justifyContent: "flex-end",
       }}
     >
-      
       <Button
         type="text"
         icon={
@@ -22,7 +21,7 @@ function Footer() {
         }
         href="https://www.linkedin.com/in/genevieve-ferrari-17001178/"
       ></Button>
-      ,
+
       <Button
         type="text"
         icon={
@@ -33,7 +32,7 @@ function Footer() {
         }
         href="https://github.com/gjferrari"
       ></Button>
-      ,
+
       <Button
         type="text"
         icon={
