@@ -1,4 +1,4 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -14,4 +14,227 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+} */
+:root {
+  --light: #d4cfc1;
+  --grod: #ffc34d;
+  --leaf: #11b64b;
+  --mermaid: #267d9c;
+  --costal: #2e515c;
+  --clem: #f26b0a;
+  --error: rgb(228, 46, 1);
+  --spacing-one: calc(1rem * 0.5);
+  --spacing-two: calc(1rem);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend";
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 16px;
+  color: var(--mermaid);
+  background-color: var(--light);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lexend";
+  font-weight: 500;
+  margin: 5px 0;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-family: "Pacifico", cursive;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: "Pacifico", cursive;
+  font-weight: 100;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-family: "Lexend", sans-serif;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-family: "Lexend", sans-serif;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-family: "Lexend", sans-serif;
+}
+
+h6 {
+  font-size: 1rem;
+  font-family: "Lexend", sans-serif;
+}
+
+p {
+  color: var(--secondary);
+  font-size: 1.1rem;
+  font-family: "Lexend", sans-serif;
+  font-weight: 100;
+  margin-top: 0;
+}
+
+a {
+  color: var(--leaf);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: wavy underline;
+}
+
+header {
+  background: white;
+}
+
+header a {
+  color: var(--mermaid);
+}
+
+button {
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.25rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0 1px;
+  color: var(--costal);
+  background-color: var(--grod);
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button[disabled] {
+  cursor: default;
+  opacity: 0.8;
+}
+
+img {
+  max-width: 100%;
+}
+
+span[role="img"] {
+  cursor: default;
+}
+
+form {
+  width: 100%;
+}
+
+input {
+  font-size: 1rem;
+  padding: 0.25rem;
+  border: 2px solid var(--costal);
+  outline: none;
+  border-radius: 3px;
+  transition: box-shadow 0.2s;
+}
+
+input:focus {
+  border: 1px solid var(--costal);
+  box-shadow: 0 0 0.25rem var(--costal);
+}
+
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.mx-1 {
+  margin-right: var(--spacing-one);
+  margin-left: var(--spacing-one);
+}
+
+.mx-2 {
+  margin-right: var(--spacing-two);
+  margin-left: var(--spacing-two);
+}
+
+.my-1 {
+  margin-top: var(--spacing-one);
+  margin-bottom: var(--spacing-one);
+}
+
+.my-2 {
+  margin-top: var(--spacing-two);
+  margin-bottom: var(--spacing-two);
+}
+
+.px-1 {
+  padding-right: var(--spacing-one);
+  padding-left: var(--spacing-one);
+}
+
+.px-2 {
+  padding-right: var(--spacing-two);
+  padding-left: var(--spacing-two);
+}
+
+.py-1 {
+  padding-top: var(--spacing-one);
+  padding-bottom: var(--spacing-one);
+}
+
+.py-2 {
+  padding-top: var(--spacing-two);
+  padding-bottom: var(--spacing-two);
+}
+
+.card {
+  width: 25%;
+  text-align: center;
+}
+
+.error-text {
+  color: var(--error);
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
 }
