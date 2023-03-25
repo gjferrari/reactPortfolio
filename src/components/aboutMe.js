@@ -19,7 +19,7 @@ const { Meta } = Card;
 const AboutMe = () => (
   <Card
     hoverable={true}
-    style={{ width: 300 }}
+    style={{ width: 300, display: "flex", flexDirection: "column" }}
     cover={
       <img
         alt="example"

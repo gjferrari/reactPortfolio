@@ -6,6 +6,7 @@ import { Avatar } from "antd";
 // import Header from "./components/header";
 
 import AboutMe from "./components/aboutMe";
+import Portfolio from "./components/portfolio";
 
 function App() {
   return (
@@ -27,8 +28,9 @@ function App() {
         // rel="noopener noreferrer"
         ></a>
       </header>
-      <div>
-        <AboutMe />
+      <div className="myCard">
+        {/* <AboutMe /> */}
+        <Portfolio/>
       </div>
     </div>
   );
