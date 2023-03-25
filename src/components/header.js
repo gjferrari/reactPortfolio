@@ -2,6 +2,6 @@ import React from "react";
 import AboutMe from "./aboutMe";
 import Portfolio from "./portfolio";
 
-function Navbar() {
+function Header() {
   return <div></div>;
 }

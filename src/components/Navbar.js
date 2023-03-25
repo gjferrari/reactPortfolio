@@ -4,7 +4,7 @@ import NavBar from "./Navbar";
 import AboutMe from "./aboutMe";
 import Portfolio from "./portfolio";
 
-function Header() {
+function Navbar() {
   const [curentPage, setCurrentPage] = useState("AboutMe");
 
   const render = () => {
@@ -21,4 +21,5 @@ function Header() {
   };
 
   const renderPageChange = (page) => setCurrentPage(page);
+  return <div></div>;
 }
