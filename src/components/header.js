@@ -1,5 +1,7 @@
-//this will be our renderer: will use usestate
-import React, { useState } from "react";
-import NavBar from "./Navbar";
+import React from "react";
 import AboutMe from "./aboutMe";
 import Portfolio from "./portfolio";
+
+function Navbar() {
+  return <div></div>;
+}
