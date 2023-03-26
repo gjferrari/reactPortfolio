@@ -46,7 +46,7 @@ function NavBar() {
               href="#Portfolio"
               onClick={() => renderPageChange("Portfolio")}
               className={
-                currentPage === "AboutMe" ? "nav-link active" : "nav-link"
+                currentPage === "Portfolio" ? "nav-link active" : "nav-link"
               }
             >
               Portfolio

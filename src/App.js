@@ -23,8 +23,9 @@ function App() {
           <Portfolio />
         </div> */}
       </main>
-
-      <Footer />
+      <div className="footer">
+        <Footer />
+      </div>
     </div>
   );
 }
