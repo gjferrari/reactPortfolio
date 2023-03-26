@@ -1,40 +1,29 @@
-import logo from "./logo.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import { AntDesignOutlined } from "@ant-design/icons";
-import { Avatar } from "antd";
-// import Header from "./components/header";
 
-import AboutMe from "./components/aboutMe";
-import Portfolio from "./components/portfolio";
-import Test from "./components/test";
+import Header from "./components/header";
+
+// import AboutMe from "./components/aboutMe";
+// import NavBar from "./components/Navbar";
+
+// import Portfolio from "./components/portfolio";
+// import Test from "./components/test";
 import Footer from "./components/footer";
 
 function App() {
   return (
     <div className="App">
-      <header className="text-3xl font-bold underline">
-        <Avatar
-          // src={<img src={url} alt="avatar" />}
-          size={{ xs: 24, sm: 32, md: 40, lg: 64, xl: 80, xxl: 100 }}
-          icon={<AntDesignOutlined />}
-          src={
-            "https://res.cloudinary.com/da6r9i8q5/image/upload/v1679770193/Genevieve_Ferrari_Headshot_gvyku1.jpg"
-          }
-        />
-        <p>Genevieve Ferrari</p>
-        <a
-        // className="App-link"
-        // href="https://reactjs.org"
-        // target="_blank"
-        // rel="noopener noreferrer"
-        ></a>
-      </header>
-      <div className="myCard">
-        <AboutMe />
-        {/* <Portfolio /> */}
-        {/* <Test /> */}
+      <div>
+        <Header />
       </div>
+      <main>
+        {/* <NavBar /> */}
+        {/* <div className="myCard">
+          <AboutMe />
+          <Portfolio />
+        </div> */}
+      </main>
+
       <Footer />
     </div>
   );

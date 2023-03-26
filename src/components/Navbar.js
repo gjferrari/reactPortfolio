@@ -1,10 +1,10 @@
 //this will be our renderer: will use usestate
 import React, { useState } from "react";
-import NavBar from "./Navbar";
+// import NavBar from "./Navbar";
 import AboutMe from "./aboutMe";
 import Portfolio from "./portfolio";
 
-function Navbar() {
+function NavBar() {
   const [currentPage, setCurrentPage] = useState("AboutMe");
 
   const render = () => {
@@ -24,33 +24,39 @@ function Navbar() {
   //   const pages = ["AboutMe", "Portfolio"];
   return (
     <div>
-      <ul className="nav nav-tabs">
-        <ul className="nav-item">
-          <a
-            href="#AboutMe"
-            onClick={() => renderPageChange("AboutMe")}
-            className={
-              currentPage === "AboutMe" ? "nav-link active" : "nav-link"
-            }
-          >
-            About Me
-          </a>
+      <div>
+        <ul className="nav nav-tabs">
+          <ul className="nav-item">
+            <a
+              href="#AboutMe"
+              onClick={() => renderPageChange("AboutMe")}
+              className={
+                currentPage === "AboutMe" ? "nav-link active" : "nav-link"
+              }
+            >
+              About Me
+            </a>
+          </ul>
+          <ul className="nav-item">
+            <a
+              href="#Portfolio"
+              onClick={() => renderPageChange("Portfolio")}
+              className={
+                currentPage === "AboutMe" ? "nav-link active" : "nav-link"
+              }
+            >
+              Portfolio
+            </a>
+          </ul>
         </ul>
-        <ul className="nav-item">
-          <a
-            href="#AboutMe"
-            onClick={() => renderPageChange("AboutMe")}
-            className={
-              currentPage === "AboutMe" ? "nav-link active" : "nav-link"
-            }
-          >
-            Portfolio
-          </a>
-        </ul>
-      </ul>
+      </div>
       <main>
-        <div>{render(currentPage)}</div>
+        <div className="myCard">
+          <div>{render(currentPage)}</div>
+        </div>
       </main>
     </div>
   );
 }
+
+export default NavBar;
