@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 // import NavBar from "./Navbar";
 import AboutMe from "./aboutMe";
+import ContactMe from "./ContactMe";
 import Portfolio from "./portfolio";
 
 function NavBar() {
@@ -14,6 +15,9 @@ function NavBar() {
 
       case "Portfolio":
         return <Portfolio />;
+
+      case "ContactMe":
+        return <ContactMe />;
 
       default:
         return <AboutMe />;
@@ -46,6 +50,17 @@ function NavBar() {
               }
             >
               Portfolio
+            </a>
+          </ul>
+          <ul className="nav-item">
+            <a
+              href="#ContactMe"
+              onClick={() => renderPageChange("ContactMe")}
+              className={
+                currentPage === "ContactMe" ? "nav-link active" : "nav-link"
+              }
+            >
+              Contact Me
             </a>
           </ul>
         </ul>
