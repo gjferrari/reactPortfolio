@@ -5,10 +5,10 @@ import AboutMe from "./aboutMe";
 import Portfolio from "./portfolio";
 
 function Navbar() {
-  const [curentPage, setCurrentPage] = useState("AboutMe");
+  const [currentPage, setCurrentPage] = useState("AboutMe");
 
   const render = () => {
-    switch (setCurrentPage) {
+    switch (currentPage) {
       case "AboutMe":
         return <AboutMe />;
 
@@ -21,5 +21,36 @@ function Navbar() {
   };
 
   const renderPageChange = (page) => setCurrentPage(page);
-  return <div></div>;
+  //   const pages = ["AboutMe", "Portfolio"];
+  return (
+    <div>
+      <ul className="nav nav-tabs">
+        <ul className="nav-item">
+          <a
+            href="#AboutMe"
+            onClick={() => renderPageChange("AboutMe")}
+            className={
+              currentPage === "AboutMe" ? "nav-link active" : "nav-link"
+            }
+          >
+            About Me
+          </a>
+        </ul>
+        <ul className="nav-item">
+          <a
+            href="#AboutMe"
+            onClick={() => renderPageChange("AboutMe")}
+            className={
+              currentPage === "AboutMe" ? "nav-link active" : "nav-link"
+            }
+          >
+            Portfolio
+          </a>
+        </ul>
+      </ul>
+      <main>
+        <div>{render(currentPage)}</div>
+      </main>
+    </div>
+  );
 }
