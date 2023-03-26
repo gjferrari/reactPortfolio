@@ -6,11 +6,11 @@ import SideHustle from "../assets/expensesScreenShot.png";
 import BurnoutBuddy from "../assets/burnout-buddy.png";
 
 const contentStyle = {
-  height: '160px',
-  color: '#fff',
-  lineHeight: '160px',
-  textAlign: 'center',
-  background: '#364d79',
+  height: "160px",
+  color: "#fff",
+  lineHeight: "160px",
+  textAlign: "center",
+  background: "#364d79",
 };
 const { Meta } = Card;
 
@@ -35,11 +35,17 @@ const Portfolio = () => {
         {/* <Radio.Button value="top"></Radio.Button> */}
       </Radio.Group>
       <Carousel dotPosition="top">
-        <div id="caroCard" style={{ width: 300, height: 600 }}>
+        <div id="caroCard">
           <Card
             hoverable={true}
             style={{ width: 300, display: "flex", flexDirection: "column" }}
-            cover={<img alt="example" src={SideHustle} />}
+            cover={
+              <img
+                alt="example"
+                src={SideHustle}
+                style={{ height: "100%", width: 350 }}
+              />
+            }
             actions={[
               <Button
                 type="text"
