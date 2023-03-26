@@ -91,6 +91,12 @@ a:hover {
   text-decoration: wavy underline;
 }
 
+a.nav-link{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
 header {
   background: white;
 }
@@ -222,6 +228,11 @@ input:focus {
 .error-text {
   color: var(--error);
 }
+
+/* .nav-link {
+  display: "flex";
+  justify-content: "flex-end";
+} */
 
 @media screen and (max-width: 768px) {
   .card {
