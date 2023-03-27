@@ -27,7 +27,7 @@ body {
   line-height: 1.5;
   font-size: 16px;
   color: var(--mermaid);
-  background-color: var(--light);
+  background-color: var(--grod);
 }
 
 h1,
@@ -229,10 +229,7 @@ input:focus {
   color: var(--error);
 }
 
-/* .nav-link {
-  display: "flex";
-  justify-content: "flex-end";
-} */
+
 
 @media screen and (max-width: 768px) {
   .card {

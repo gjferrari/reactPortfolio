@@ -9,6 +9,8 @@ function Footer() {
         display: "flex",
         // flexDirection: "flex-end",
         justifyContent: "flex-end",
+        marginTop: "auto"
+        // position: "absolute",
       }}
     >
       <Button

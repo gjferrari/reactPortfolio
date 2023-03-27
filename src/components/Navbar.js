@@ -61,7 +61,7 @@ function NavBar() {
               href="#Resume"
               onClick={() => renderPageChange("Resume")}
               className={
-                currentPage === "Portfolio" ? "nav-link active" : "nav-link"
+                currentPage === "Resume" ? "nav-link active" : "nav-link"
               }
             >
               Resume

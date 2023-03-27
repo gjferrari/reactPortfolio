@@ -31,17 +31,17 @@ const onBlur = (values) => {
 };
 
 const ContactMe = () => {
-  const [email, setEmail] = useState("");
-  const [Name, setName] = usteState("");
-  const [message, setMessage] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [Name, setName] = usteState("");
+  // const [message, setMessage] = useState("");
 
-  const handleBlur = (e) => {
-    const { target } = e;
-    const inputYpe = target.name;
-    const inputValue = target.value;
+  // const handleBlur = (e) => {
+  //   const { target } = e;
+  //   const inputYpe = target.name;
+  //   const inputValue = target.value;
 
 
-  };
+  // };
 
   return (
     <div id="contact-form" style={{ padding: 30 }}>

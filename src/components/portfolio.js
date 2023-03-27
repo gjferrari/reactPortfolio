@@ -28,7 +28,7 @@ const Portfolio = () => {
   // };
 
   return (
-    <div className="Portfolio" style={{ width: 350 }}>
+    <div className="Portfolio" style={{ width: 500 }}>
       <Radio.Group
         onChange={handlePositionChange}
         value="top"
@@ -38,7 +38,7 @@ const Portfolio = () => {
       >
         {/* <Radio.Button value="top"></Radio.Button> */}
       </Radio.Group>
-      <Carousel dotPosition="top" style={{ width: 550 }}>
+      <Carousel dotPosition="top" style={{ width: 500 }}>
         <div style={{ width: 500 }}>
           <Card
             hoverable={true}
