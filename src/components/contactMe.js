@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 // import { validateEmail } from "../utils/helpers";
 // import { Avatar, Card, Button } from "antd";
 import { GithubFilled, LinkedinFilled, MailFilled } from "@ant-design/icons";
@@ -26,65 +26,71 @@ const onFinish = (values) => {
   console.log(values);
 };
 
-
+const onBlur = (values) => {
+  console.log(values);
+};
 
 const ContactMe = () => {
   return (
-    <div id="contact-form" style={{padding:30}}>
+    <div id="contact-form" style={{ padding: 30 }}>
       <Form
-      {...layout}
-      name="nest-messages"
-      onFinish={onFinish}
-      style={{
-        maxWidth: 600,
-      }}
-      validateMessages={validateMessages}
-    >
-      <Form.Item
-        name={["name"]}
-        label="Name"
-        rules={[
-          {
-            required: true,
-          },
-        ]}
-      >
-        <Input
-          placeholder="Frodo Baggins"
-          // onBlur={handleChange}
-        />
-      </Form.Item>
-      <Form.Item
-        name={["email"]}
-        label="Email"
-        rules={[
-          {
-            type: "email",
-            required: true,
-          },
-        ]}
-      >
-        <Input
-          placeholder="ringbearer@gmail.com"
-
-          // onBlur={handleChange}
-        />
-      </Form.Item>
-
-      <Form.Item name={["user", "message"]} label="Message">
-        <Input.TextArea placeholder="Wow! You are the greatest coder who ever lived!"/>
-      </Form.Item>
-      <Form.Item
-        wrapperCol={{
-          ...layout.wrapperCol,
-          offset: 8,
+        {...layout}
+        name="nest-messages"
+        onFinish={onFinish}
+        onBlur={onBlur}
+        style={{
+          maxWidth: 600,
         }}
+        validateMessages={validateMessages}
       >
-        <Button type="primary" htmlType="submit">
-          Submit
-        </Button>
-      </Form.Item>
-    </Form>
+        <Form.Item
+          name={["name"]}
+          label="Name"
+          rules={[
+            {
+              required: true,
+            },
+          ]}
+        >
+          <Input
+            placeholder="Frodo Baggins"
+            name={["name"]}
+            label="Name"
+            rules={[{ required: true }]}
+            onBlur={onBlur}
+          />
+        </Form.Item>
+        <Form.Item
+          name={["email"]}
+          label="Email"
+          rules={[
+            {
+              type: "email",
+              required: true,
+            },
+          ]}
+        >
+          <Input
+            placeholder="ringbearer@gmail.com"
+            onBlur={validateMessages}
+            // onBlur={handleChange}
+          />
+        </Form.Item>
+
+        <Form.Item name={["user", "message"]} label="Message">
+          <Input.TextArea placeholder="Wow! You are the greatest coder who ever lived!" />
+        </Form.Item>
+        <Form.Item
+          wrapperCol={{
+            ...layout.wrapperCol,
+            offset: 8,
+          }}
+        >
+          <Button type="primary" htmlType="submit">
+            Submit
+          </Button>
+        </Form.Item>
+      </Form>
     </div>
   );
 };
