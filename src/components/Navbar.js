@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import AboutMe from "./aboutMe";
 import ContactMe from "./ContactMe";
 import Portfolio from "./portfolio";
+import Resume from "./Resume";
 
 function NavBar() {
   const [currentPage, setCurrentPage] = useState("AboutMe");
@@ -15,6 +16,9 @@ function NavBar() {
 
       case "Portfolio":
         return <Portfolio />;
+
+      case "Resume":
+        return <Resume />;
 
       case "ContactMe":
         return <ContactMe />;
@@ -50,6 +54,17 @@ function NavBar() {
               }
             >
               Portfolio
+            </a>
+          </ul>
+          <ul className="nav-item">
+            <a
+              href="#Resume"
+              onClick={() => renderPageChange("Resume")}
+              className={
+                currentPage === "Portfolio" ? "nav-link active" : "nav-link"
+              }
+            >
+              Resume
             </a>
           </ul>
           <ul className="nav-item">

@@ -1,19 +1,15 @@
 import React from "react";
 import { FilePdfFilled } from "@ant-design/icons";
 import { Avatar, Card, Button } from "antd";
-
+import CodingResume from "../../src/assets/codingResume.pdf";
+import ResumePic from "../../src/assets/resumePic.png";
 const { Meta } = Card;
 
 const Resume = () => (
   <Card
     hoverable={true}
     style={{ width: 300, display: "flex", flexDirection: "column" }}
-    cover={
-      <img
-        alt="example"
-        src="https://res.cloudinary.com/da6r9i8q5/image/upload/v1679707119/StandupShot_r7lkic.jpg"
-      />
-    }
+    cover={<img alt="picture from Arches National Park" src={ResumePic} />}
     actions={[
       //   <Button
       //     type="text"
@@ -33,7 +29,7 @@ const Resume = () => (
             key="link"
           />
         }
-        href="https://github.com/gjferrari"
+        href={CodingResume}
       ></Button>,
     ]}
   >
@@ -41,8 +37,16 @@ const Resume = () => (
       avatar={
         <Avatar src="https://res.cloudinary.com/da6r9i8q5/image/upload/v1679770193/Genevieve_Ferrari_Headshot_gvyku1.jpg" />
       }
-      title="About Me"
-      description="I'm a full stack web developmer based out of Tacoma, WA"
+      title="Technical Skills"
+      description={
+        <div>
+          <ul>Front End: HTML, CSS, JQuery, Javascript, Bootstrap, AntD </ul>
+          <ul>
+            Back End: MySQL, SQL Server, MongoDB, Express, ReactJS, Node,
+            Handlebars, Webpack
+          </ul>
+        </div>
+      }
     />
   </Card>
 );
