@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 // import NavBar from "./Navbar";
 import AboutMe from "./aboutMe";
-import ContactMe from "./ContactMe";
+import ContactMe from "./contactMe";
 import Portfolio from "./portfolio";
 import Resume from "./Resume";
 
