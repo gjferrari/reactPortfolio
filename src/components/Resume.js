@@ -8,7 +8,12 @@ const { Meta } = Card;
 const Resume = () => (
   <Card
     hoverable={true}
-    style={{ width: 300, display: "flex", flexDirection: "column" }}
+    style={{
+      width: 300,
+      display: "flex",
+      flexDirection: "column",
+      backgroundColor: "#a7dfe3",
+    }}
     cover={<img alt="picture from Arches National Park" src={ResumePic} />}
     actions={[
       //   <Button

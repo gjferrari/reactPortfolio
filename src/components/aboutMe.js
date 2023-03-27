@@ -19,7 +19,13 @@ const { Meta } = Card;
 const AboutMe = () => (
   <Card
     hoverable={true}
-    style={{ width: 300, display: "flex", flexDirection: "column" }}
+    style={{
+      width: 400,
+      display: "flex",
+      flexDirection: "column",
+      paddingTop: 10,
+      backgroundColor: "#a7dfe3",
+    }}
     cover={
       <img
         alt="example"
@@ -54,7 +60,10 @@ const AboutMe = () => (
         <Avatar src="https://res.cloudinary.com/da6r9i8q5/image/upload/v1679770193/Genevieve_Ferrari_Headshot_gvyku1.jpg" />
       }
       title="About Me"
-      description="I'm a full stack web developmer based out of Tacoma, WA"
+      description="Hi! I'm Genevieve: I'm a full stack web development student based out of Tacoma, WA. 
+      My passion for problem solving and language learning inspired my coding journey and I can't wait to jump into the industry!
+      I'm learning to enjoy front-end design but my one true love is working with databases: I can't get enough of object oriented programming!
+      In my free time I do standup, hang out with my dog Frodo, and make movies with my friends."
     />
   </Card>
 );
