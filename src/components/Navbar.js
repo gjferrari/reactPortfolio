@@ -3,7 +3,8 @@ import React, { useState } from "react";
 // import NavBar from "./Navbar";
 import AboutMe from "./aboutMe";
 import ContactMe from "./contactMe";
-import Portfolio from "./portfolio";
+// import Portfolio from "./portfolio";
+import Portfolio from "./Project";
 import Resume from "./Resume";
 
 function NavBar() {
