@@ -30,6 +30,10 @@ body {
   background-color: var(--grod);
 }
 
+.ul.nav.nav-tabs {
+  display: flex;
+  justify-content: center;
+}
 h1,
 h2,
 h3,
@@ -74,12 +78,24 @@ h6 {
   font-family: "Lexend", sans-serif;
 }
 
+p #genevieve {
+  color: var(--secondary);
+  font-size: 1.1rem;
+  font-family: "Lexend", sans-serif;
+  font-weight: 100;
+  margin-top: 0;
+  direction: flex;
+  align-items: center;
+}
+
 p {
   color: var(--secondary);
   font-size: 1.1rem;
   font-family: "Lexend", sans-serif;
   font-weight: 100;
   margin-top: 0;
+  direction: flex;
+  align-items: center;
 }
 
 a {
@@ -91,14 +107,19 @@ a:hover {
   text-decoration: wavy underline;
 }
 
-a.nav-link{
+a.nav-link {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
+a.ul.nav.nav-tabs {
+  display: flex;
+  justify-content: center;
+}
 
 header {
   background: white;
+  display: flex;
 }
 
 header a {
@@ -228,8 +249,6 @@ input:focus {
 .error-text {
   color: var(--error);
 }
-
-
 
 @media screen and (max-width: 768px) {
   .card {

@@ -34,7 +34,7 @@ function NavBar() {
     <div>
       <div>
         <ul className="nav nav-tabs">
-          <ul className="nav-item">
+          <ul className="nav-link">
             <a
               href="#AboutMe"
               onClick={() => renderPageChange("AboutMe")}
@@ -45,7 +45,7 @@ function NavBar() {
               About Me
             </a>
           </ul>
-          <ul className="nav-item">
+          <ul className="nav-link">
             <a
               href="#Portfolio"
               onClick={() => renderPageChange("Portfolio")}
@@ -56,7 +56,7 @@ function NavBar() {
               Portfolio
             </a>
           </ul>
-          <ul className="nav-item">
+          <ul className="nav-link">
             <a
               href="#Resume"
               onClick={() => renderPageChange("Resume")}
@@ -67,7 +67,7 @@ function NavBar() {
               Resume
             </a>
           </ul>
-          <ul className="nav-item">
+          <ul className="nav-link">
             <a
               href="#ContactMe"
               onClick={() => renderPageChange("ContactMe")}

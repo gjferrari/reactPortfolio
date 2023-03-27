@@ -80,7 +80,7 @@ const Portfolio = () => {
                     key="link"
                   />
                 }
-                href="https://github.com/https://github.com/gjferrari/burnout-buddy"
+                href="https://github.com/gjferrari/burnout-buddy"
               ></Button>,
             ]}
           >

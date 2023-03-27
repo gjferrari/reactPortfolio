@@ -9,7 +9,7 @@ import NavBar from "./Navbar";
 function Header() {
   return (
     <div>
-      <header className="text-3xl font-bold underline">
+      <header className="text-3xl font-bold underline" style={{direction:"flex", justifyContent:"center"}}>
         <Avatar
           id="myAvatar"
           size={{ xs: 24, sm: 32, md: 40, lg: 64, xl: 80, xxl: 100 }}
