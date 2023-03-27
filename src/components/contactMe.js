@@ -1,7 +1,7 @@
-import React from "react";
-// import { validateEmail } from "../utils/helpers";
+import React, { useState } from "react";
+
 // import { Avatar, Card, Button } from "antd";
-import { GithubFilled, LinkedinFilled, MailFilled } from "@ant-design/icons";
+// import { GithubFilled, LinkedinFilled, MailFilled } from "@ant-design/icons";
 
 import { Button, Form, Input } from "antd";
 const layout = {
@@ -31,6 +31,18 @@ const onBlur = (values) => {
 };
 
 const ContactMe = () => {
+  const [email, setEmail] = useState("");
+  const [Name, setName] = usteState("");
+  const [message, setMessage] = useState("");
+
+  const handleBlur = (e) => {
+    const { target } = e;
+    const inputYpe = target.name;
+    const inputValue = target.value;
+
+
+  };
+
   return (
     <div id="contact-form" style={{ padding: 30 }}>
       <Form
