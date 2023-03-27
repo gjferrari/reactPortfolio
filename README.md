@@ -2,55 +2,36 @@
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-## Description
+- [Description](#description)
 
-Being a web developer means being part of a community. You’ll need a place not only to share your projects while you're applying for jobs or working as a freelancer but also to share your work with other developers and collaborate on projects.
-
-Your task is to create a portfolio using your new React skills, which will help set you apart from other developers whose portfolios don’t use the latest technologies.
-
-## Acceptance Criteria
-
-```md
-GIVEN a single-page application portfolio for a web developer
-WHEN I load the portfolio
-THEN I am presented with a page containing a header, a section for content, and a footer
-WHEN I view the header
-THEN I am presented with the developer's name and navigation with titles corresponding to different sections of the portfolio
-WHEN I view the navigation titles
-THEN I am presented with the titles About Me, Portfolio, Contact, and Resume, and the title corresponding to the current section is highlighted
-WHEN I click on a navigation title
-THEN I am presented with the corresponding section below the navigation without the page reloading and that title is highlighted
-WHEN I load the portfolio the first time
-THEN the About Me title and section are selected by default
-WHEN I am presented with the About Me section
-THEN I see a recent photo or avatar of the developer and a short bio about them
-WHEN I am presented with the Portfolio section
-THEN I see titled images of six of the developer’s applications with links to both the deployed applications and the corresponding GitHub repositories
-WHEN I am presented with the Contact section
-THEN I see a contact form with fields for a name, an email address, and a message
-WHEN I move my cursor out of one of the form fields without entering text
-THEN I receive a notification that this field is required
-WHEN I enter text into the email address field
-THEN I receive a notification if I have entered an invalid email address
-WHEN I am presented with the Resume section
-THEN I see a link to a downloadable resume and a list of the developer’s proficiencies
-WHEN I view the footer
-THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter)
-```
-
-## Table of Contents
-
-- [Installation](#installation)
+- [Install](#install)
+- [Contribution](#contribution)
+- [Visuals](#visuals)
 - [Deployed Application](#deployed-application)
 - [License](#license)
+- [Acceptance Criteria](#acceptance-criteria)
+
+## Description
+
+As a new web developer, this porfolio serves as a place not only to share my projects as I'm applying for jobs or working as a freelancer but also to share my work with other developers and collaborate on future projects.
+
+This mobile-first, single page application was designed using React and Ant Design. For future builds I hope to incorporate animation and build out a basic backend structure for handling email and booking forms.
 
 ## Installation
 
-First clone the repository. Install all dependencies using 'npm i' in the command terminal, and run the code using 'npm start'.
+First clone the repository. Install all dependencies using 'npm i' in the command terminal, and run the code using 'npm run start'.
+
+## Visuals
+
+- [Screenshot of Home Page/About Me Page](./assets/aboutMePage.png)
+- [Screenshot of Porfolio Page](./assets/portolioScreenshot.png)
+- [Screenshot of Resume Page](./assets/resumeScreenshot.png)
+- [Screenshot of Contact Me Page](./assets/contactMeScreenshot.png)
 
 ## Deployed Application
 
-Once I have a working site I will include a link
+[Click-Here-For-Our-Live-URL]()<br/>
+[Click-Here-For-Our-GitHub-Repository](https://github.com/gjferrari/reactPortfolio)<br/>
 
 ## License
 
