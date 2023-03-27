@@ -15,9 +15,9 @@ const layout = {
 
 /* eslint-disable no-template-curly-in-string */
 const validateMessages = {
-  required: "${label} is required!",
+  required: "${name} is required!",
   types: {
-    email: "${label} is not a valid email!",
+    email: "${email} is not a valid email!",
   },
 };
 /* eslint-enable no-template-curly-in-string */
@@ -25,58 +25,94 @@ const validateMessages = {
 const onFinish = (values) => {
   console.log(values);
 };
-const ContactMe = () => (
-  <Form
-    {...layout}
-    name="nest-messages"
-    onFinish={onFinish}
-    style={{
-      maxWidth: 600,
-    }}
-    validateMessages={validateMessages}
-  >
-    <Form.Item
-      name={["user", "name"]}
-      label="Name"
-      rules={[
-        {
-          required: true,
-        },
-      ]}
-    >
-      <Input placeholder="Frodo Baggins" />
-    </Form.Item>
-    <Form.Item
-      name={["user", "email"]}
-      label="Email"
-      rules={[
-        {
-          type: "email",
-          required: true,
-        },
-      ]}
-    >
-      <Input placeholder="ringbearer@gmail.com" />
-    </Form.Item>
 
-    {/* <Form.Item name={["user", "website"]} label="Website">
-      <Input />
-    </Form.Item> */}
-    <Form.Item name={["user", "introduction"]} label="Introduction">
-      <Input.TextArea />
-    </Form.Item>
-    <Form.Item
-      wrapperCol={{
-        ...layout.wrapperCol,
-        offset: 8,
+const ContactMe = () => {
+  const [formState, setFormState] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [errorMessage, setErrorMessage] = useState("");
+  const { name, email, message } = formState;
+
+  function handleSubmit(event) {
+    Event.preventDefault();
+    console.log(formState);
+  }
+
+  function handleChange(event) {
+    if (event.target.name === "email") {
+      const isValid = validateEmail(event.target.value);
+      console.log(isValid);
+      if (!isValid) {
+        setErrorMessage("Your email is invalid. Please try again.");
+      } else {
+        setErrorMessage("");
+      }
+    } else {
+      if (!event.target.value.length) {
+        setErrorMessage(`${event.target.name} is required.`);
+      } else {
+        setErrorMessage("");
+      }
+    }
+
+    if (!errorMessage) {
+      setFormState({ ...formState, [event.target.name]: event.target.value });
+    }
+  }
+  return (
+    <Form
+      {...layout}
+      name="nest-messages"
+      onFinish={onFinish}
+      style={{
+        maxWidth: 600,
       }}
+      validateMessages={validateMessages}
     >
-      <Button type="primary" htmlType="submit">
-        Submit
-      </Button>
-    </Form.Item>
-  </Form>
-);
+      <Form.Item
+        name={["user", "name"]}
+        label="Name"
+        rules={[
+          {
+            required: true,
+          },
+        ]}
+      >
+        <Input placeholder="Frodo Baggins" />
+      </Form.Item>
+      <Form.Item
+        name={["user", "email"]}
+        label="Email"
+        rules={[
+          {
+            type: "email",
+            required: true,
+          },
+        ]}
+
+      >
+        <Input placeholder="ringbearer@gmail.com" />
+      </Form.Item>
+
+      <Form.Item name={["user", "message"]} label="Message">
+        <Input.TextArea />
+      </Form.Item>
+      <Form.Item
+        wrapperCol={{
+          ...layout.wrapperCol,
+          offset: 8,
+        }}
+      >
+        <Button type="primary" htmlType="submit">
+          Submit
+        </Button>
+      </Form.Item>
+    </Form>
+  );
+};
+
 export default ContactMe;
 
 // function ContactMe() {
