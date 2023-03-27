@@ -58,14 +58,14 @@ const Portfolio = () => {
       description:
         "This challenge was to build an API for a social network web application where users could share their thoughts, react to friends thoughts, and create a friend list.For this application I used Express.js for routing, a MongoDB database, and the Mongoose ODM. To format timestamps I used the the native JavaScript Date object. In order to test the api, I used Insomnia to test all routes; you can watch a walk-through video of that process in the video section of my repository!",
       deployedUrl: "https://github.com/gjferrari/social-network-API",
-      repoUrl: "",
+      repoUrl: "https://github.com/gjferrari/social-network-API",
     },
     {
       title: "Team Profile Generator",
       imgAsset: Team,
       description:
         "This command-line application takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person.",
-      deployedUrl: "",
+      deployedUrl: "https://github.com/gjferrari/team-profile-generator-",
       repoUrl: "https://github.com/gjferrari/team-profile-generator-",
     },
   ]);
