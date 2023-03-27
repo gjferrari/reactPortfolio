@@ -27,7 +27,7 @@ body {
   line-height: 1.5;
   font-size: 16px;
   color: var(--mermaid);
-  background-color: var(--grod);
+  background-color: #ffe9a7;
 }
 
 .ul.nav.nav-tabs {
