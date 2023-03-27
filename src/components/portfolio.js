@@ -7,6 +7,7 @@ import BurnoutBuddy from "../assets/burnout-buddy.png";
 import Jate from "../assets/JATE.png";
 import NoteTaker from "../assets/notetaker.png";
 import SocialMedia from "../assets/Social-Media-Api.png";
+import Team from "../assets/Team.png";
 
 const contentStyle = {
   height: "160px",
@@ -314,6 +315,60 @@ const Portfolio = () => {
               description="This challenge was to build an API for a social network web application where users could share their thoughts, react to friends' thoughts, and create a friend list. 
               For this application I used Express.js for routing, a MongoDB database, and the Mongoose ODM. 
               To format timestamps I used the the native JavaScript Date object. In order to test the api, I used Insomnia to test all routes; you can watch a walk-through video of that process in the video section of my repository!"
+            />
+          </Card>
+        </div>
+        <div style={{ width: 500 }}>
+          <Card
+            hoverable={true}
+            style={{
+              width: 500,
+              paddingTop: 30,
+              display: "flex",
+              backgroundColor: "#a7dfe3",
+              flexDirection: "column",
+            }}
+            cover={
+              <img
+                alt="example"
+                src={Team}
+                style={{
+                  height: "100%",
+                  width: 500,
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              />
+            }
+            actions={[
+              // <Button
+              //   type="text"
+              //   icon={
+              //     <HomeTwoTone
+              //       style={{ color: "#800797", fontSize: "20px" }}
+              //       key="link"
+              //     />
+              //   }
+              //   href="https://greatestnotetaker.herokuapp.com/notes"
+              // ></Button>,
+              <Button
+                type="text"
+                icon={
+                  <GithubFilled
+                    style={{ color: "#800797", fontSize: "20px" }}
+                    key="link"
+                  />
+                }
+                href="https://github.com/gjferrari/team-profile-generator-"
+              ></Button>,
+            ]}
+          >
+            <Meta
+              avatar={
+                <Avatar src="https://res.cloudinary.com/da6r9i8q5/image/upload/v1679770193/Genevieve_Ferrari_Headshot_gvyku1.jpg" />
+              }
+              title="Team Profile Generator"
+              description="This command-line application takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person."
             />
           </Card>
         </div>
