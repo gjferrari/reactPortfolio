@@ -30,7 +30,7 @@ First clone the repository. Install all dependencies using 'npm i' in the comman
 
 ## Deployed Application
 
-[Click-Here-For-Our-Live-URL]()<br/>
+[Click-Here-For-Our-Live-URL](https://gjferrari.github.io/reactPortfolio/)<br/>
 [Click-Here-For-Our-GitHub-Repository](https://github.com/gjferrari/reactPortfolio)<br/>
 
 ## License
