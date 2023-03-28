@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.50ac8faf.css",
-    "main.js": "/react-portfolio/static/js/main.cdab9f82.js",
-    "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
-    "static/media/resumePic.png": "/react-portfolio/static/media/resumePic.11090b4c9ac8747ad451.png",
-    "static/media/Social-Media-Api.png": "/react-portfolio/static/media/Social-Media-Api.e795bb80f228232031a0.png",
-    "static/media/Team.png": "/react-portfolio/static/media/Team.c3fd34d1c289b11b9478.png",
-    "static/media/SideHustle.png": "/react-portfolio/static/media/SideHustle.30b00615f66cf20eff82.png",
-    "static/media/burnout-buddy.png": "/react-portfolio/static/media/burnout-buddy.e8af73613705aa75aa0d.png",
-    "static/media/JATE.png": "/react-portfolio/static/media/JATE.191112684d50b6ffe64d.png",
-    "static/media/notetaker.png": "/react-portfolio/static/media/notetaker.5c3d1aa4d8f3852cdda1.png",
-    "static/media/codingResume.pdf": "/react-portfolio/static/media/codingResume.c9d4e907b838b8b80552.pdf",
-    "index.html": "/react-portfolio/index.html",
-    "main.50ac8faf.css.map": "/react-portfolio/static/css/main.50ac8faf.css.map",
-    "main.cdab9f82.js.map": "/react-portfolio/static/js/main.cdab9f82.js.map",
-    "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
+    "main.css": "/reactPortfolio/static/css/main.50ac8faf.css",
+    "main.js": "/reactPortfolio/static/js/main.663d228b.js",
+    "static/js/787.a2cb61a6.chunk.js": "/reactPortfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/resumePic.png": "/reactPortfolio/static/media/resumePic.11090b4c9ac8747ad451.png",
+    "static/media/Social-Media-Api.png": "/reactPortfolio/static/media/Social-Media-Api.e795bb80f228232031a0.png",
+    "static/media/Team.png": "/reactPortfolio/static/media/Team.c3fd34d1c289b11b9478.png",
+    "static/media/SideHustle.png": "/reactPortfolio/static/media/SideHustle.30b00615f66cf20eff82.png",
+    "static/media/burnout-buddy.png": "/reactPortfolio/static/media/burnout-buddy.e8af73613705aa75aa0d.png",
+    "static/media/JATE.png": "/reactPortfolio/static/media/JATE.191112684d50b6ffe64d.png",
+    "static/media/notetaker.png": "/reactPortfolio/static/media/notetaker.5c3d1aa4d8f3852cdda1.png",
+    "static/media/codingResume.pdf": "/reactPortfolio/static/media/codingResume.c9d4e907b838b8b80552.pdf",
+    "index.html": "/reactPortfolio/index.html",
+    "main.50ac8faf.css.map": "/reactPortfolio/static/css/main.50ac8faf.css.map",
+    "main.663d228b.js.map": "/reactPortfolio/static/js/main.663d228b.js.map",
+    "787.a2cb61a6.chunk.js.map": "/reactPortfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.50ac8faf.css",
-    "static/js/main.cdab9f82.js"
+    "static/js/main.663d228b.js"
   ]
 }
